@@ -28,7 +28,8 @@ body{
 	font-size: 15px;
 	line-height: 24px;
 	color: $text;
-	background-color: $grey;
+	background-color: #fff;
+	overflow-x: hidden;
 }
 .wrapper{
 	display: flex;
@@ -60,7 +61,7 @@ body{
 }
 
 .page-content{
-	background-color: #fff;
+	background-color: $grey;
 }
 
 .title{
@@ -105,5 +106,17 @@ body{
 		a{
 			color: #b0bec5;
 		}
+	}
+}
+.angel-right{
+	position: relative;
+	padding-left: 15px;
+	&::before{
+		content: "\f105";
+		font-family: 'icomoon';
+		position: absolute;
+		left: 0;
+		color: $green;
+		font-size: 14px;
 	}
 }
