@@ -54,7 +54,7 @@ $(function(){
         return false;
     });
 
-
+    $('input[type="file"], select').styler();
 
 	var mixer = mixitup('.products__inner-box'); //всегда должен идти в конце!
 
