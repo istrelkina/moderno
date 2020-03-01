@@ -14,7 +14,10 @@
 	align-items: center;
 	
 }
-.header__logo {}
+
+.header__logo{
+	display: block;
+}
 .header__text {
 	margin-left: auto;
 	margin-right: 50px;
@@ -1967,6 +1970,43 @@ button.icon-sort-amount-desc{
 	margin-left: 260px;
 	@include f500;
 	font-size: 15px;
+}
+.settings{
+	.jq-selectbox{
+		max-width: 540px;
+		width: 100%;
+
+	}
+	.jq-selectbox__select {
+	    height: 40px;
+	    padding: 0px 10px;
+	    border: 1px solid #dedede;
+	    border-bottom-color: #dedede;
+	    border-radius: 0px;
+	    background-color: #f9f9f9;
+	    box-shadow: none;
+	    font-family: 'Roboto-Regular', sans-serif;
+		line-height: 40px;
+	    color: #707070;
+	    text-shadow: none;
+	}
+	.jq-selectbox__trigger-arrow {
+		border: none;
+		top: 0;
+		right: 20px;
+		line-height: 40px;
+		font-size: 15px;
+		&::before{
+			font-family: 'icomoon';
+			content: "\f0d7";
+		}
+	}
+	.jq-selectbox__trigger{
+		border-left: none;
+	}
+	.jq-selectbox__select{
+		background: #f9f9f9;
+	}
 }
 //------------------------------------End Settings----------------------------------------
 //------------------------------------Start Profile----------------------------------------
